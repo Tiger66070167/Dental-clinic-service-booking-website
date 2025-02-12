@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTooth, FaPhone, FaStar } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import CardContainer from "./CardContainer";
 
 const testimonials = [
@@ -21,27 +21,19 @@ function HomePage(){
 
         {/* Services Section */}
         <section>
-            <div className="services">
-            <h2>บริการของพวกเรา</h2>
-
-            </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section>
-            <h2>What Our Clients Say</h2>
-            <div>
+            <div className="center">
+                <h2>บริการของพวกเรา</h2>
                 <CardContainer />
             </div>
         </section>
 
         {/*Buttom Contact Section */}
-        <section className="text-center bg-gray-100 p-6 rounded-2xl">
-            <h2 className="text-2xl font-bold">Get in Touch</h2>
-            <p className="mt-2">Call us for an appointment</p>
-            <div className="flex justify-center items-center gap-2 mt-4">
-            <FaPhone size={20} className="text-blue-500" />
-            <span className="text-lg font-semibold">+1 234 567 890</span>
+        <section>
+            <div className="center">
+                <h2>เกี่ยวกับเรา</h2>
+                <p>Call us for an appointment</p>
+                <FaPhone size={20} className="text-blue-500" />
+                <span>+1 234 567 890</span>
             </div>
         </section>
         </div>

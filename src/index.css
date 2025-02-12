@@ -77,8 +77,9 @@ button:focus-visible {
 
 }
 
-.services{
-  display: inline;
+.center{
+  display: block;
+  margin: auto;
   align-items: center;
   text-align: center;
 }
@@ -92,12 +93,12 @@ button:focus-visible {
 }
 
 .card {
+  background-color: RGB(219,234,254);
   width: 300px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  background: white;
 }
 
 
