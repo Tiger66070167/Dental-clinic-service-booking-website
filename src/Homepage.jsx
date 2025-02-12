@@ -1,13 +1,6 @@
 import React from "react";
 import { FaTooth, FaPhone, FaStar } from "react-icons/fa";
 import CardContainer from "./CardContainer";
-import Card from "./Card";
-
-const services = [
-    { name: "Teeth Cleaning", icon: <FaTooth size={24} />, description: "Professional teeth cleaning to maintain oral hygiene." },
-    { name: "Cavity Filling", icon: <FaTooth size={24} />, description: "Safe and effective cavity treatments." },
-    { name: "Teeth Whitening", icon: <FaTooth size={24} />, description: "Brighten your smile with our whitening services." },
-    ];
 
 const testimonials = [
     { name: "John Doe", review: "Great experience! The staff was friendly and professional.", rating: 5 },
@@ -38,7 +31,7 @@ function HomePage(){
         <section>
             <h2>What Our Clients Say</h2>
             <div>
-
+                <CardContainer />
             </div>
         </section>
 

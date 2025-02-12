@@ -1,11 +1,18 @@
 import Card from "./Card";
 
+
+const cardData = [
+    { id: 1, name: "Teeth Cleaning", icon: <FaTooth size={24} />, description: "Professional teeth cleaning to maintain oral hygiene." },
+    { id: 2, name: "Cavity Filling", icon: <FaTooth size={24} />, description: "Safe and effective cavity treatments." },
+    { id: 3, name: "Teeth Whitening", icon: <FaTooth size={24} />, description: "Brighten your smile with our whitening services." },
+    ];
+
 const CardContainer = () => {
     return (
         <div className="card-container">
-        <Card title="Card 1" description="This is the first card." />
-        <Card title="Card 2" description="This is the second card." />
-        <Card title="Card 3" description="This is the third card." />
+        {cardData.map((card) => (
+            <Card key={card.id} title={card.title} description={card.description} />
+        ))}
         </div>
     );
 };
