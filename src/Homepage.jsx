@@ -1,15 +1,17 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaBell } from "react-icons/fa";
 import CardContainer from "./CardContainer";
-
-const testimonials = [
-    { name: "John Doe", review: "Great experience! The staff was friendly and professional.", rating: 5 },
-    { name: "Jane Smith", review: "Highly recommend! My teeth feel amazing.", rating: 5 },
-    ];
 
 function HomePage(){
     return (
         <div>
+        <header>
+            <h1>LOGO</h1>
+            <div>
+                <FaBell size={45}/>
+                <button>เข้าสู้ระบบ</button>
+            </div>
+        </header>
         {/* Top Homepage Section */}
         <section className="top">
             <div>
@@ -22,20 +24,22 @@ function HomePage(){
         {/* Services Section */}
         <section>
             <div className="center">
-                <h2>บริการของพวกเรา</h2>
+                <h2>บริการของพวกเรา <input className="search-box" type="text" placeholder="Search..."/>
+                </h2>
+                
                 <CardContainer />
             </div>
         </section>
 
         {/*Buttom Contact Section */}
-        <section>
-            <div className="center">
+        <footer>
+            <div>
                 <h2>เกี่ยวกับเรา</h2>
-                <p>Call us for an appointment</p>
+                <p>โทรติดต่อเราเพื่อทำการนัดหมาย</p>
                 <FaPhone size={20} className="text-blue-500" />
                 <span>+1 234 567 890</span>
             </div>
-        </section>
+        </footer>
         </div>
     );
 };

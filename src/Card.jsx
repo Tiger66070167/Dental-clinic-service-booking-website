@@ -2,7 +2,7 @@ import { FaTooth } from "react-icons/fa";
 const Card = ({ title, description }) => {
     return (
             <div className="card">
-            <FaTooth size={24}/>
+            <FaTooth size={24} color="red"/>
             <h2>{title}</h2>
             <p>{description}</p>
             </div>

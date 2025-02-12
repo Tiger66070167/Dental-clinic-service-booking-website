@@ -1,9 +1,10 @@
-html, body, #root {
+#root {
+  position: relative;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
 }
 
 a {
@@ -13,14 +14,6 @@ a {
 }
 a:hover {
   color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h {
@@ -63,7 +56,7 @@ button:focus-visible {
 
 .top div{
   background-color: RGB(219,234,254);
-  width: 1200px;
+  width: 80%;
   height: 250px;
   margin: 1cm;
   padding: 50px;
@@ -85,20 +78,59 @@ button:focus-visible {
 }
 
 .card-container {
-  display: flex; /* Makes cards align in a single row */
-  gap: 20px; /* Adds spacing between cards */
-  justify-content: center; /* Centers the cards in the container */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* กำหนดให้มี 3 คอลัมน์ */
+  gap: 20px; /* ระยะห่างระหว่างคอลัมน์และแถว */
+  grid-auto-rows: minmax(100px, auto); /* กำหนดความสูงแถวที่ยืดหยุ่น */
   padding: 20px;
-  overflow-x: auto; /* Enables horizontal scrolling if too many cards */
+
 }
 
 .card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: RGB(219,234,254);
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer{
+  padding: 5%;
+  background-color: #1a1a1b;
+  color: azure;
+}
+
+.search-box {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.search-box:hover {
+  border-color: #646cff;
+}
+
+header{
   background-color: RGB(219,234,254);
-  width: 300px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  height: 100px;
+  position: top;
+  top: 0;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 900px;
+
+}
+
+header div{
+  position: Absolute; right: 10px; 
+  width:  250px;
+  align-items: right;
+  display: flex;
+  gap: 50px;
 }
 
 
