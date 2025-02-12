@@ -6,7 +6,6 @@ html, body, #root {
   overflow: hidden;
 }
 
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,6 +23,13 @@ body {
   min-height: 100vh;
 }
 
+h {
+  font-weight: bold;
+  font-size: 3.2em;
+  line-height: 1.1;
+
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -36,7 +42,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #19e4ff;
+  color: white;
+  background-color: RGB(15,23,42);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -47,6 +54,52 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.top{
+  display: grid;
+  place-items: center; /* Centers both horizontally & vertically */
+  
+}
+
+.top div{
+  background-color: RGB(219,234,254);
+  width: 1200px;
+  height: 250px;
+  margin: 1cm;
+  padding: 50px;
+  border: 10px;
+  border-radius: 10px;
+  display: flex;        /* Enables flexbox */
+  flex-direction: column; /* Aligns children in a column */
+  align-items: center;  /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  text-align: center;   /* Centers text */
+
+}
+
+.services{
+  display: inline;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+  display: flex; /* Makes cards align in a single row */
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: center; /* Centers the cards in the container */
+  padding: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling if too many cards */
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: white;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
