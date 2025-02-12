@@ -1,8 +1,8 @@
-import HomePage from "./Homepage"
+import Register from "./Register"
 
 
 function App(){
-  return <HomePage></HomePage>
+  return <Register></Register>
 }
 
 export default App;
