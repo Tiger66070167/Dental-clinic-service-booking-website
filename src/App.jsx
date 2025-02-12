@@ -6,6 +6,7 @@ import HomePage from './Homepage';
 import History from './History';
 import Confirm from './Confirm';
 import List from './List';
+import Booking from './Booking';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/booking" element={<Booking />} />
         <Route path="/history" element={<History />} />
         <Route path="/confirm" element={<Confirm />} />
         <Route path="/list" element={<List />} />
