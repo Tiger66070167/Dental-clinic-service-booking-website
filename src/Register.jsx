@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+  const navigate = useNavigate(); // ใช้ Hook นี้เพื่อเปลี่ยนหน้า
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -83,7 +86,7 @@ const Register = () => {
             <button type="submit" className="register-button">สร้างบัญชี</button>
           </form>
           <div className="text-center mt-3">
-            <p>มีบัญชีอยู่แล้ว? <a href="/login">เข้าสู่ระบบ</a></p>
+            <p>มีบัญชีอยู่แล้ว? <span className="login-link" onClick={() => navigate('/login')} style={{ cursor: 'pointer', color: 'blue', textDecoration: 'underline' }}>เข้าสู่ระบบ</span></p>
           </div>
         </div>
       </div>
