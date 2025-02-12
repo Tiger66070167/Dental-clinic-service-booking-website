@@ -1,7 +1,7 @@
 import HomePage from "./Homepage"
 
 function App(){
-  return <div className="center"><HomePage></HomePage></div>
+  return <HomePage></HomePage>
 }
 
 export default App;
